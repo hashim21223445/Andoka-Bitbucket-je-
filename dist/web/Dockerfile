@@ -102,5 +102,5 @@ COPY --from=build [             \
     "./"                        \
 ]
 
-FROM nginx
+FROM nginx:1.29.2-alpine3.22-slim
 COPY --from=raw . /usr/share/nginx/html
